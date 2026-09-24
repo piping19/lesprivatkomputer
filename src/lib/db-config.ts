@@ -30,4 +30,4 @@
  * Baris di bawah ini TIDAK perlu diubah — hanya isi tanda kutipnya saja.
  */
 
-export const MANUAL_DATABASE_URL = "";
+export const MANUAL_DATABASE_URL = "postgresql://neondb_owner:npg_Oz2UNpjlx9Tv@ep-soft-queen-b5amwtcw-pooler.c-7.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require";
