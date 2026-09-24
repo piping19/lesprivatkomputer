@@ -1,0 +1,24 @@
+{
+  "packages": [
+    {
+      "id": "les-biasa",
+      "name": "LES BIASA",
+      "tagline": "Tanpa sertifikat",
+      "priceLabel": "Harga mulai",
+      "price": "Rp 350.000",
+      "note": "Harga tiap program berbeda — lihat pada kartu program di atas.",
+      "waMessage": "Halo Admin LesKomputer! 👋 Saya ingin mendaftar LES BIASA (tanpa sertifikat). Terima kasih 🙏",
+      "highlight": false
+    },
+    {
+      "id": "les-resmi",
+      "name": "LES RESMI SERTIFIKAT",
+      "tagline": "Dengan sertifikat resmi",
+      "priceLabel": "Harga",
+      "price": "Rp 1.900.000",
+      "note": "Lengkap dengan sertifikat resmi — cocok untuk melamar kerja atau melengkapi portofolio.",
+      "waMessage": "Halo Admin LesKomputer! 👋 Saya ingin bertanya tentang LES RESMI SERTIFIKAT. Terima kasih 🙏",
+      "highlight": true
+    }
+  ]
+}

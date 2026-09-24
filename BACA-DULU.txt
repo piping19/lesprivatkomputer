@@ -1,0 +1,48 @@
+====================================================
+  PENTING! BACA DULU SEBELUM UPLOAD KE GITHUB
+====================================================
+
+!!! CATATAN KHUSUS UNTUK UPLOAD ULANG !!!
+Jika Anda SUDAH PERNAH menempel URL Neon di
+src/lib/db-config.ts, maka setelah upload ulang
+URL itu AKAN TERHAPUS (kembali kosong).
+-> Setelah selesai upload, buka lagi src/lib/db-config.ts
+   di GitHub (ikon pensil) dan tempel KEMBALI URL Neon Anda.
+   Tanpa ini, data tidak akan tersimpan permanen!
+
+Repo GitHub Anda HARUS menampilkan "package.json"
+di HALAMAN DEPAN repo, bersama folder src/ dan public/.
+
+CARA UPLOAD YANG BENAR:
+1. Extract (unzip) file ini di komputer Anda.
+2. MASUK / buka folder hasil extract
+   (sampai terlihat package.json di dalamnya).
+3. Tekan Ctrl+A untuk memilih SEMUA file & folder.
+4. Drag semuanya ke halaman "uploading an existing file"
+   di repo GitHub Anda yang baru dibuat.
+5. Commit changes.
+
+CEK HASIL:
+- Halaman depan repo menampilkan package.json, src/, public/
+  -> BENAR. Lanjut deploy ke Vercel.
+- Halaman depan repo hanya berisi 1 folder
+  -> SALAH. Inilah penyebab Vercel error 404.
+  Hapus isinya dan ulangi dari langkah 2.
+
+Selanjutnya, agar perubahan admin TERSIMPAN PERMANEN:
+1. Buat database gratis di neon.tech (Sign Up -> Create project
+   -> copy "Connection string" yang diawali postgresql://)
+2. (Opsional) Upload data: buka SQL Editor di Neon, paste isi
+   file database.sql, klik Run -> database langsung berisi data
+3. Di repo GitHub, buka src/lib/db-config.ts -> klik ikon PENSIL
+4. Tempel URL di antara tanda kutip -> Commit changes
+5. Selesai! Vercel otomatis deploy ulang.
+
+FITUR BARU — PAMERAN KODE:
+Login Admin sekarang punya 2 tab: "Program Les" dan
+"Pameran Kode". Di tab Pameran Kode Anda bisa menambah/
+mengubah/menghapus contoh coding (C++, Python, Java, dll)
+yang tampil di section "Contoh Materi" beranda —
+tanpa perlu menyentuh kode website sama sekali.
+
+Panduan lengkap: lihat file PANDUAN-DEPLOY-NEON.md

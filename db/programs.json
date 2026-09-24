@@ -1,0 +1,79 @@
+{
+  "programs": [
+    {
+      "id": "office",
+      "name": "Microsoft Office",
+      "level": "Pemula - Menengah",
+      "description": "Kuasai aplikasi perkantoran yang paling banyak dibutuhkan di dunia kerja. Cocok untuk pelajar, mahasiswa, dan profesional.",
+      "topics": [
+        "Microsoft Word (dokumen & laporan)",
+        "Microsoft Excel (formula & grafik)",
+        "Microsoft PowerPoint (presentasi)",
+        "Internet, email & printing"
+      ],
+      "duration": "24 Sesi",
+      "price": "Rp 350.000",
+      "certificatePrice": "",
+      "materials": [
+        "Pengenalan komputer & Windows dasar",
+        "Microsoft Word: format dokumen, tabel & mail merge",
+        "Microsoft Excel: formula, VLOOKUP & grafik data",
+        "Microsoft PowerPoint: slide presentasi yang menarik",
+        "Internet, email profesional & teknik printing",
+        "Project akhir: laporan kerja + presentasi"
+      ],
+      "icon": "office",
+      "image": "/images/programs/office.jpg"
+    },
+    {
+      "id": "programming",
+      "name": "Pemrograman",
+      "level": "Pemula - Mahir",
+      "description": "Belajar coding dari nol dengan pendekatan praktis. Bangun website dan aplikasi pertamamu secara bertahap.",
+      "topics": [
+        "Dasar logika & algoritma",
+        "HTML, CSS & JavaScript",
+        "Python untuk pemula",
+        "Membangun project web sederhana"
+      ],
+      "duration": "32 Sesi",
+      "price": "Rp 500.000",
+      "certificatePrice": "",
+      "materials": [
+        "Dasar logika & algoritma pemrograman",
+        "HTML: membangun struktur halaman web",
+        "CSS: mempercantik tampilan website",
+        "JavaScript: membuat web interaktif",
+        "Python untuk pemula: variabel, perulangan & fungsi",
+        "Project akhir: membangun website sederhana"
+      ],
+      "icon": "code",
+      "image": "/images/programs/programming.jpg"
+    },
+    {
+      "id": "design",
+      "name": "Desain Grafis",
+      "level": "Pemula - Menengah",
+      "description": "Ciptakan desain yang menarik dengan Photoshop dan CorelDRAW. Cocok untuk usaha, karier kreatif, atau hobi.",
+      "topics": [
+        "Adobe Photoshop (edit foto)",
+        "CorelDRAW (vektor & layout)",
+        "Desain logo & branding",
+        "Desain poster & media sosial"
+      ],
+      "duration": "28 Sesi",
+      "price": "Rp 450.000",
+      "certificatePrice": "",
+      "materials": [
+        "Pengenalan dunia desain grafis & tools",
+        "Adobe Photoshop: edit foto & manipulasi gambar",
+        "CorelDRAW: desain vektor & layout",
+        "Desain logo & brand identity",
+        "Desain poster, brosur & media sosial",
+        "Project akhir: portofolio desain pribadi"
+      ],
+      "icon": "design",
+      "image": "/images/programs/design.jpg"
+    }
+  ]
+}
