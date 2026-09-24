@@ -499,7 +499,7 @@ export function Programs() {
             if (!open) closeDetail();
           }}
         >
-          <DialogContent className="max-h-[92vh] gap-0 overflow-y-auto p-0 sm:max-w-2xl">
+          <DialogContent className="gap-0 overflow-hidden border-sky-100 p-0 sm:max-w-3xl [&>button]:rounded-full [&>button]:bg-white/90 [&>button]:shadow-md [&>button]:backdrop-blur-sm">
             {detailProgram && (
               <>
                 <DialogHeader className="sr-only">
@@ -519,28 +519,29 @@ export function Programs() {
                       : detailProgram.topics;
                   const certPrice = detailProgram.certificatePrice || sertifikatPrice;
                   return (
-                    <div>
-                      {/* Header: gambar / ikon program */}
-                      {detailProgram.image ? (
-                        <div className="relative">
+                    <div className="max-h-[88dvh] overflow-y-auto overscroll-contain sm:grid sm:h-[92dvh] sm:max-h-[780px] sm:grid-cols-5 sm:overflow-hidden">
+                      {/* Kolom kiri: gambar / ikon program (tinggi penuh di layar besar) */}
+                      <div className="relative h-36 flex-none sm:col-span-2 sm:h-full">
+                        {detailProgram.image ? (
                           <img
                             src={detailProgram.image}
                             alt={`Gambar program ${detailProgram.name}`}
-                            className="h-44 w-full object-cover sm:h-56"
+                            className="h-full w-full object-cover"
                           />
-                          <span className="absolute right-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200 backdrop-blur-sm">
-                            {detailProgram.level}
-                          </span>
-                        </div>
-                      ) : (
-                        <div
-                          className={`flex h-28 items-center justify-center ${meta.className}`}
-                        >
-                          <DetailIcon className="h-12 w-12" aria-hidden="true" />
-                        </div>
-                      )}
+                        ) : (
+                          <div
+                            className={`flex h-full w-full items-center justify-center ${meta.className}`}
+                          >
+                            <DetailIcon className="h-12 w-12" aria-hidden="true" />
+                          </div>
+                        )}
+                        <span className="absolute left-3 top-3 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-600 shadow-sm ring-1 ring-slate-200 backdrop-blur-sm">
+                          {detailProgram.level}
+                        </span>
+                      </div>
 
-                      <div className="p-6">
+                      {/* Kolom kanan: isi detail — scroll sendiri agar tidak terpotong */}
+                      <div className="p-5 sm:col-span-3 sm:overflow-y-auto sm:p-6">
                         <div className="flex flex-wrap items-center gap-2">
                           <span className="flex items-center gap-1.5 rounded-full bg-slate-50 px-2.5 py-1 text-xs font-medium text-slate-500 ring-1 ring-slate-200">
                             <Clock className="h-3.5 w-3.5 text-sky-500" aria-hidden="true" />
